@@ -19,13 +19,13 @@
 
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
+      <li class="nav-item <%= 'active' if action_name == 'one'%>">
         <a class="nav-link" href="<%= pages_one_path%>">Primera </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <%= 'active' if action_name == 'two'%>">
         <a class="nav-link" href="<%= pages_two_path%>">Segunda</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <%= 'active' if action_name == 'three'%>">
         <a class="nav-link" href="<%= pages_three_path%>">Tercera</a>
       </li>
 
